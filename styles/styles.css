@@ -1,0 +1,335 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+  font-family: sans-serif;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active + .owl-item h3,
+#product-slider .active + .owl-item button {
+  display: block;
+}
+
+#product-slider .active + .owl-item img {
+  transform: scale(1.2);
+}
+.owl-item img {
+  transition: all 0.3s linear;
+}
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 30vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+/* SOCIAL */
+.social {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+i {
+  margin-left: 25px;
+}
+
+/* HOMEPAGE */
+#homePage {
+  background: url(/images/banner.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-details {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.home-heading {
+  color: #464646;
+  font-size: 350%;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.red-text {
+  color: #ed2d34;
+}
+
+.home-details p {
+  width: 84%;
+  color: rgb(73, 73, 73);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.btn {
+  border: solid 2px #464646;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #464646;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  transition: 0.3s ease-in;
+  width: 30%;
+  padding: 15px 7px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+/* PRODUCT PAGE */
+#productPage {
+  background: url(/images/banner2.jpg);
+  background-size: cover;
+  /* / padding: 10%; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 72%;
+  margin-top: 10%;
+}
+
+.page-heading {
+  color: #464646;
+  font-size: 300%;
+  font-weight: bolder;
+}
+
+.page-subtitle {
+  color: #ed2d34;
+  font-size: 300%;
+  font-weight: bolder;
+}
+
+.sales-art-cus {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.product-num {
+  color: #464646;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.product-des {
+  color: #464646;
+  font-weight: normal;
+  font-size: 50%;
+}
+
+#product-slider {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  /* border: 1px black solid; */
+  max-width: 70%;
+  margin-top: 70px;
+}
+
+.product {
+  /* width: 20%; */
+  /* border: 1px black solid; */
+  display: grid;
+  place-items: center;
+}
+
+#product-slider img {
+  max-width: 400px;
+}
+
+.product-button {
+  border-radius: 25px;
+  padding: 5% 10%;
+}
+
+#product-slider h3 {
+  color: #464646;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-size: 180%;
+}
+
+/* MODAL */
+
+/* TESTIMONIAL PAGE */
+#testimonialPage {
+  background: url(/images/banner3.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-header-container {
+  text-align: center;
+}
+
+.testimonial-heading {
+  color: #464646;
+  font-size: 175%;
+}
+
+.testimonial-subtitle {
+  color: #ed2d34;
+  font-size: 280%;
+  font-weight: bolder;
+}
+
+/* TESTIMONIAL SLIDER */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-message {
+  max-width: 200px;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  max-width: 70px;
+}
+
+.testimonial-name {
+  text-align: center;
+  margin-top: 15px;
+  color: #464646;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* CONTACT PAGE */
+#contactPage {
+  background: url(/images/banner4.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+/* CONTACT CONTAINER */
+.contact-container {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  width: 100%;
+}
+
+/* CONTACT HEADER */
+/* .contact-header-container {
+}
+
+.contact-heading {
+}
+
+.contact-subtitle {
+}
+
+/* CONTACT DETAILS */
+/* .contact-details-container {
+}
+
+.contact-details-heading {
+}
+
+.contact-details-description {
+} */
+*/
+
+/* CONTACT FORM */
+#contact-form {
+  border: 1px black solid;
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
